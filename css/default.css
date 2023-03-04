@@ -16,6 +16,7 @@
     font-weight: 400;
     font-style: normal;
     color: #DDD1D1;
+    scroll-behavior: smooth;
 }
 a {
     color: #DDD1D1;
@@ -77,6 +78,10 @@ h1 {
     width: 125px;
     /* border: 1px solid #DDD1D1; */
 }
+.link:hover {
+    transform: scale(1.05);
+    color: #7c7575;
+}
 .lowerHr {
     margin-top: 220px;
     border: 2px solid;
@@ -93,7 +98,7 @@ h1 {
 .projects {
     margin-top: 50px;
     /* margin-bottom: 50px; */
-    /* width: 70%; */
+    width: 900px;
     height: 1200px;
 }
 .pHead {
@@ -119,6 +124,7 @@ span {
     margin-top: 50px;
     width: 900px;
     margin: auto;
+    position: relative;
 }
 .fHeader {
     margin-top: 80px;
@@ -130,54 +136,16 @@ span {
     font-weight: 100;
     line-height: 1.8;
 }
+.inputName {
+    position: relative;
+}
 /* input {
     background: rgba(255,255,255,0);
     border: none;
     border-bottom: #DDD1D1;
     color: #DDD1D1;
 } */
-.input {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #DDD1D1; 
-    margin-bottom: 30px;
-    border: none;
-    border-bottom: 1px solid #fff;
-    outline: none;
-    background: transparent;
-}
-.inputName label {
-    position: absolute;
-    top:0;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #DDD1D1;
-    pointer-events: none;
-    transition: .5s;
-}
-.inputEmail label {
-     position: absolute;
-    top: 10;
-    left: 0;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #DDD1D1;
-    pointer-events: none;
-    transition: .5s;
-}
-.input:focus ~ label {
-  top: -20px;
-  left: 0;
-  color: #03e9f4;
-  font-size: 12px;
-}
-textarea {
-    background: rgba(255,255,255,0);
-    border: none;
-    border-bottom: #DDD1D1;
-}
+
 .fBtn {
     background: rgba(255,255,255,0);
     border-bottom: 2px solid #DDD1D1;

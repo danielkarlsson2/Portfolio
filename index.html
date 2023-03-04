@@ -19,28 +19,26 @@
     <!-- ----------section 1 -->
     <div class="main">
         <div class="header d-flex ">
-            <div class="infoSection mx-auto mt-4">
+            <div class="infoSection mx-auto mt-4 ">
                 <h5 class="mt-4 thin animate__animated animate__fadeInUp">daniel karlsson</h5>
                     <div class="headWrapper d-flex justify-content-between">
-                        <div class="w-50 mt-3">
+                        <div class="w-50 mt-3 d-flex flex-column justify-content-around">
                             <h1 class="animate__animated animate__fadeInUp">Nice to meet you! <br> I’m Daniel Karlsson.</h1>
-                                <p class="infoText thin w-75 animate__animated animate__fadeInUp">Based in Sweden, I’m a frontend developer passionate about building web apps that users love.</p>
-                                <div class=" mt-5">
-                                    <a class="contact bold animate__animated animate__fadeInUp" href="">CONTACT ME</a>
-                                </div>
+                            <p class="infoText thin w-75 animate__animated animate__fadeInUp">Based in Sweden, I’m a frontend developer passionate about building web apps that users love.</p>
+                            <div class="mt-5">
+                                <a class="contact bold animate__animated animate__fadeInUp" href="#footer">CONTACT ME</a>
+                            </div>
                         </div>
                        
                         <div class="imgWrapper d-flex flex-column mt-3">
-
-                            <img class="img" src="./img/daniel.jpeg" alt="">
-                            <div class="d-flex justify-content-around mt-3">
-                                <a href="#"><img src="./img/Icon awesome-github.png" alt=""></a>
-                                <a href="https://www.linkedin.com/in/daniel-karlsson-74b1a266/" target="_blank"><img src="./img/Icon awesome-linkedin.png" alt=""></a>
-                                <a href="#"><img src="./img/Icon awesome-instagram.png" alt=""></a>
+                            <img class="img" src="./img/daniel.jpeg" alt="">                            
+                            <div class="d-flex justify-content-around mt-4">
+                                <a class="link" href="https://github.com/danielkarlsson2" target="_blank"><img src="./img/Icon awesome-github.png" alt=""></a>
+                                <a class="link" href="https://www.linkedin.com/in/daniel-karlsson-74b1a266/" target="_blank"><img src="./img/Icon awesome-linkedin.png" alt=""></a>
+                                <a class="link" href="https://www.instagram.com/danielkarl_sson/" target="_blank"><img src="./img/Icon awesome-instagram.png" alt=""></a>
                             </div>
-
                         </div>   
-
+                        
                     </div>
 
                     <hr class="lowerHr">
@@ -50,8 +48,8 @@
 
 
         <!-- ---------------section 2 -->
-        <div class="projects mx-auto w-75">
-            <div class="d-flex justify-content-between container text-start">
+        <div class="projects mx-auto">
+            <div class="d-flex justify-content-between  text-start">
                 <h1>HTML</h1>
                 <h1>CSS</h1>
                 <h1>Javascript</h1>
@@ -89,7 +87,7 @@
 
         <!-- -----------section 3 -->
 
-        <section class="footer">
+        <section class="footer" id="footer">
             <div class="d-flex justify-content-between contactForm">
                 <div class="fHeader">
                     <h1 class="border">Contact</h1>
@@ -100,23 +98,22 @@
                 </div>
                 <div class="fHeader">
                     <div class="d-flex flex-column gap-3">
-                        <div class="inputName">
-                            <label for="iName:">Name:</label>
-                            <input class="iName input" type="text">
+                        <div class="inputName border">
+                            <label for="">Name:</label>
+                            <input class=" " type="text">
                         </div>
                         <div class="inputEmail">
-                            <label for="iEmail">Email:</label>
-                            <input class="iEmail input" type="email">
+                            <label for="">Email:</label>
+                            <input class=" " type="email">
 
                         </div>
 
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Message:"></textarea>
+                        <textarea name="" id="" placeholder="Message:"></textarea>
                     </div>
                     <button class="fBtn text-end">Send Message</button>
                 </div>
                 
-                <hr class="fHr">
-                
+                <hr class="fHr">                
                 
             </div>
             
