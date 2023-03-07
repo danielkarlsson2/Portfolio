@@ -18,7 +18,8 @@
 
     <!-- ----------section 1 -->
     <div class="main">
-        <div class="header d-flex ">
+        
+        <section class="header d-flex">
             <div class="infoSection mx-auto mt-4 ">
                 <h5 class="mt-4 thin animate__animated animate__fadeInUp">daniel karlsson</h5>
                     <div class="headWrapper d-flex justify-content-between">
@@ -44,11 +45,11 @@
                     <hr class="lowerHr">
             </div>
             
-        </div>
+        </section>
 
 
         <!-- ---------------section 2 -->
-        <div class="projects mx-auto">
+        <section class="projects mx-auto">
             <div class="d-flex justify-content-between  text-start">
                 <h1>HTML</h1>
                 <h1>CSS</h1>
@@ -83,41 +84,53 @@
 
             </div>
                     
-        </div>
+        </section>
 
         <!-- -----------section 3 -->
 
-        <section class="footer" id="footer">
-            <div class="d-flex justify-content-between contactForm">
-                <div class="fHeader">
-                    <h1 class="border">Contact</h1>
-                    <p class="mt-5 border">I would love to hear about your project
-                        And how I could help. Please contact me
-                        here and I get back to you as soon as 
-                        possible.</p>
-                </div>
-                <div class="fHeader">
-                    <div class="d-flex flex-column gap-3">
-                        <div class="inputName border">
-                            <label for="">Name:</label>
-                            <input class=" " type="text">
-                        </div>
-                        <div class="inputEmail">
-                            <label for="">Email:</label>
-                            <input class=" " type="email">
-
-                        </div>
-
-                        <textarea name="" id="" placeholder="Message:"></textarea>
+        <section class="footer d-flex flex-column mx-auto" id="footer">
+            <div class="contactForm d-flex justify-content-between flex-column ">
+                <div class="fContent d-flex flex-row justify-content-between ">
+                    <div class="fHeader animate__animated animate__fadeInUp">
+                        <h1 class=" ">Contact</h1>
+                        <p class="mt-5 ">I would love to hear about your project
+                            And how I could help. Please contact me
+                            here and I get back to you as soon as 
+                            possible.</p>
                     </div>
-                    <button class="fBtn text-end">Send Message</button>
+                    <div class="fHeader ">
+                        <form class="d-flex flex-column gap-3">
+                            <div class="formInput">
+                                <input class="input" type="text">
+                                <label class="thin" for="">Name:</label>
+                            </div>
+                            <div class="formInput">
+                                <input class="input" type="email">
+                                <label class="thin" for="">Email:</label>
+                            </div>
+                            <div class="formInput">
+                                <!-- <label class="thin" for="textArea">Message:</label> -->
+                                <textarea class="textInput" name="" placeholder="Message:" id="textArea"></textarea>
+                            </div>
+                        </form>
+                        <button class="fBtn">Send Message</button>
+                    </div> 
+                
+                
                 </div>
-                
-                <hr class="fHr">                
-                
-            </div>
+                <div class="text-center">
+                    <hr class="fHr">     
+                    <div class="d-flex justify-content-between">
+                        <h5 class="thin animate__animated animate__fadeInUp text-start">daniel karlsson</h5>
+                        <div class="footer-links d-flex justify-content-around">
+                            <a class="link" href="https://github.com/danielkarlsson2" target="_blank"><img src="./img/Icon awesome-github.png" alt=""></a>
+                            <a class="link" href="https://www.linkedin.com/in/daniel-karlsson-74b1a266/" target="_blank"><img src="./img/Icon awesome-linkedin.png" alt=""></a>
+                            <a class="link" href="https://www.instagram.com/danielkarl_sson/" target="_blank"><img src="./img/Icon awesome-instagram.png" alt=""></a>
+                        </div>
+                    </div>                       
+                </div>
+            </div>          
             
-            <h5 class="thin animate__animated animate__fadeInUp">daniel karlsson</h5>
         </section>
         
     </div>

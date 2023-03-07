@@ -9,7 +9,8 @@
     margin: 0;
     padding: 0;
 
-    color: white;
+    /* color: white; */
+    color: black;
     /* background-color: var(--main-bg-color); */
 
     font-family: "area-normal", sans-serif;
@@ -37,11 +38,10 @@ h1 {
 .main {
     height: 100%;
     background-color: var(--main-bg-color);
-
     position: relative;
 }
 
-/*--------------- header */
+/*---------------Section 1 header */
 .headWrapper {
     z-index: 10;
 }
@@ -50,7 +50,10 @@ h1 {
     width: 100%;
     border: none;
     position: relative;
-    background-image: url("../img/bg_bokeh.png");
+    background-image: url("../img/bg_portfolio.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 .infoSection {
     position: relative;
@@ -73,6 +76,7 @@ h1 {
 }
 .contact:hover {
     color: #7c7575;
+    transition: .2s;
 }
 .contactHr {
     width: 125px;
@@ -80,10 +84,11 @@ h1 {
 }
 .link:hover {
     transform: scale(1.05);
+    transition: .2s;
     color: #7c7575;
 }
 .lowerHr {
-    margin-top: 220px;
+    /* margin-top: 150px; */
     border: 2px solid;
     border-radius: 3px;
     opacity: 100%;
@@ -117,11 +122,14 @@ span {
 
 /* --------Footer */
 .footer {
-    background-image: url("../img/bg_bokeh.png");
+    background-image: url("../img/bg_portfolio.png");
+    background-size: cover;
     height: 100vh;
+    position: relative;
 }
 .contactForm {
     margin-top: 50px;
+    height: 60%;
     width: 900px;
     margin: auto;
     position: relative;
@@ -129,38 +137,73 @@ span {
 .fHeader {
     margin-top: 80px;
     width: 400px;
-    position: relative;
 }
 .fHeader p {
     /* font-size: 28px; */
     font-weight: 100;
     line-height: 1.8;
 }
-.inputName {
+.formInput {
     position: relative;
-}
-/* input {
-    background: rgba(255,255,255,0);
-    border: none;
-    border-bottom: #DDD1D1;
+    margin-bottom: 2rem;
     color: #DDD1D1;
-} */
+}
+.input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 2px solid #DDD1D1;
+    outline: none;
+    background: transparent;
+    color: #DDD1D1;
+}
+.formInput label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;    
+}
+.formInput input:focus + label {
+    top: -20px;
+    left: 0;
+    color: #857f7f;
+    font-size: 14px;
+}
+textarea::placeholder {
+    color: #DDD1D1;
+}
+.textInput {
+    width: 100%;
+    background: transparent;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid #DDD1D1;
+    height: 70px;
+}
 
 .fBtn {
     background: rgba(255,255,255,0);
     border-bottom: 2px solid #DDD1D1;
+    line-height: 2.5;
     border-top: none;
     border-left: none;
+    font-size: 18px;
+    font-weight: 600;
 }
-
+.fBtn:hover {
+    color: #857f7f;
+    border-bottom: 2px solid #857f7f;
+    transition: .2s;
+}
 .fHr {
-    /* margin-top: 100px; */
-    
     border-radius: 3px;
     opacity: 100%;
-    position: absolute;
-    bottom: 90px;
-    width: 900px;
+    width: 900px; 
+}
+.footer-links {
+    width: 200px;
+    align-items: center;
 }
 
 /* ---------helpers */
