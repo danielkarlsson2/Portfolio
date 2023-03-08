@@ -170,8 +170,19 @@ span {
     color: #857f7f;
     font-size: 14px;
 }
+.formInput input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+        transition: background-color 5000000s ease-in-out 0s;
+        -webkit-text-fill-color: #DDD1D1 !important;
+}
 textarea::placeholder {
     color: #DDD1D1;
+}
+textarea:focus::placeholder {
+    color: transparent;
+    transition: .2s;
 }
 .textInput {
     width: 100%;
