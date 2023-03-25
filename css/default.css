@@ -58,6 +58,9 @@ h1 {
 .infoSection {
     position: relative;
     width: 900px;
+    height: 80%;
+    min-height: 700px;
+    margin: auto;
 }
 .infoText {
     margin-top: 60px;
@@ -110,14 +113,67 @@ h1 {
     margin-top: 100px;
 }
 
-.gImg {
+
+/* -----------------Modal */
+.container {
+    position: relative;
+}
+.popup-image {
+    position: fixed;
+    top: 0; left: 0;
+    background: rgb(0,0,0, .9);
+    height: 100%;
     width: 100%;
+    z-index: 100;
+    display: none;
+}
+.popup-image span {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    font-size: 60px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+.popup-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 768px) {
+    .container .popup-image img{
+        width: 95%;
+    }
+}
+
+.gImg {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
     cursor: pointer;
 }
+.modal-item img:hover {
+    transform: scale(1.02);
+    transition: .2s ease;
+}
+/* .close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  } */
+
+
+/* .gImg:hover {opacity: 0.7;}
 span {
     font-size: 12px;
     color: white;
-}
+} */
+
+/* -------Modal End */
 
 
 /* --------Footer */
@@ -129,7 +185,8 @@ span {
 }
 .contactForm {
     margin-top: 50px;
-    height: 60%;
+    min-height: 600px;
+    height: 70%;
     width: 900px;
     margin: auto;
     position: relative;
@@ -192,7 +249,14 @@ textarea:focus::placeholder {
     border-bottom: 2px solid #DDD1D1;
     height: 70px;
 }
-
+.success {
+    /* border-bottom: 1px solid green; */
+    color: green;
+}
+.error {
+    /* border-bottom: 1px solid red; */
+    color: red;
+}
 .fBtn {
     background: rgba(255,255,255,0);
     border-bottom: 2px solid #DDD1D1;
@@ -226,4 +290,7 @@ textarea:focus::placeholder {
 .bold {
     font-weight: 700;
 }
-
+.feedback {
+    color: rgba(253, 125, 125, 0.935);
+    font-style: italic;
+}
